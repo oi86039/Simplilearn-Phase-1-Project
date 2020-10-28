@@ -11,10 +11,24 @@ body {
   -o-background-size: cover;
 }
 
+.featured{
+  background: url('./london-underground-carriage2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 .display-3{
   color: white;
 }
 
 .btn{
   background-color: #3252ba;
+}
+
+.btn-secondary{
+  background-color: white;
+  border-color: grey;
+  color: grey;
 }
