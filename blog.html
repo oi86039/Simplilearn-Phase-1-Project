@@ -135,7 +135,7 @@
     <div class="row">
       <div class="col-md-8 blog-main">
         <div id="addArticleDiv" class="blog-post form-group" style="display: none">
-          <form>
+          <form oninput="validateAddPost()">
             <h2 class="blog-post-title"style="margin-bottom: 10px">New Blog Post</h2>
             <input type="text" id="addTitle" style="margin-bottom: 5px ;" class="blog-post-title" placeholder="Title"
               maxlength="50"></input>
@@ -145,7 +145,7 @@
             <table>
               <tbody>
                 <tr>
-                  <td style="padding: 5px;"><a class="btn btn-primary disabled">Publish</a></td>
+                  <td style="padding: 5px;"><a id="publish" class="btn btn-primary disabled">Publish</a></td>
                   <td style="padding: 5px;"><a onclick="hideAddDiv()" class="btn btn-secondary">Discard</a></td>
                 </tr>
               </tbody>
