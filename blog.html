@@ -45,7 +45,7 @@
 
 <body>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="#">Simply Blogging</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
       aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,22 +136,24 @@
       <div class="col-md-8 blog-main">
         <div id="addArticleDiv" class="blog-post form-group" style="display: none">
           <form oninput="validateAddPost()">
-            <h2 class="blog-post-title"style="margin-bottom: 10px">New Blog Post</h2>
+            <h2 class="blog-post-title" style="margin-bottom: 10px">New Blog Post</h2>
             <input type="text" id="addTitle" style="margin-bottom: 5px ;" class="blog-post-title" placeholder="Title"
               maxlength="50"></input>
-            <input type="text" id="addAuthor" style="margin-bottom: 10px ;" class="blog-post-meta" placeholder="Author(s)/Contributor(s)"
-             size="58" maxlength="100"></input>
-            <textarea id="addArticle" class="form-control" rows="8" maxLength="20000" placeholder="Write your blog post here. (maximum 20,000 characters)"></textarea>
+            <input type="text" id="addAuthor" style="margin-bottom: 10px ;" class="blog-post-meta"
+              placeholder="Author(s)/Contributor(s)" size="58" maxlength="100"></input>
+            <textarea id="addArticle" class="form-control" rows="8" maxLength="20000"
+              placeholder="Write your blog post here. (maximum 20,000 characters)"></textarea>
             <table>
               <tbody>
                 <tr>
-                  <td style="padding: 5px;"><a onclick="publishArticle()" id="publish" class="btn btn-primary disabled">Publish</a></td>
+                  <td style="padding: 5px;"><a onclick="publishArticle()" id="publish"
+                      class="btn btn-primary disabled">Publish</a></td>
                   <td style="padding: 5px;"><a onclick="hideAddDivConfirm()" class="btn btn-secondary">Discard</a></td>
                 </tr>
               </tbody>
             </table>
           </form>
-        <hr>
+          <hr>
         </div>
 
         <h3 id="yourPosts" style="display: none" class="pb-4 mb-4 font-italic border-bottom">
@@ -165,46 +167,11 @@
         </h3>
 
         <div class="blog-post">
-          <h2 class="blog-post-title">Sample blog post</h2>
-          <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+          <h2 class="blog-post-title">Featured: Live Long and Corporate</h2>
+          <p class="blog-post-meta">October 27, 2020 by <a href="#">Ramos Gonzales</a></p>
 
-          <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic
-            typography, images, and code are all supported.</p>
-          <hr>
-          <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus.
-            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est
-            at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-          <blockquote>
-            <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu
-              leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          </blockquote>
-          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-            Aenean lacinia bibendum nulla sed consectetur.</p>
-          <h2>Heading</h2>
-          <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus,
-            nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac,
-            vestibulum at eros.</p>
-          <h3>Sub-heading</h3>
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-          <pre><code>Example code block</code></pre>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce
-            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <h3>Sub-heading</h3>
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia
-            bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac
-            cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <ul>
-            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-            <li>Donec id elit non mi porta gravida at eget metus.</li>
-            <li>Nulla vitae elit libero, a pharetra augue.</li>
-          </ul>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-          <ol>
-            <li>Vestibulum id ligula porta felis euismod semper.</li>
-            <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-            <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-          </ol>
-          <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+          <p>Working for a corporation has its perks, especially financially. But the extra dough and security can come
+            with a steep toll on our emotional well being.</p>
         </div><!-- /.blog-post -->
 
         <h3 class="pb-4 mb-4 font-italic border-bottom">
@@ -245,7 +212,7 @@
             Aenean lacinia bibendum nulla sed consectetur.</p>
           <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
         </div><!-- /.blog-post -->
-
+        s
         <nav class="blog-pagination">
           <a class="btn btn-outline-primary" href="#">Older</a>
           <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
@@ -255,14 +222,7 @@
 
       <aside class="col-md-4 blog-sidebar">
         <!-- Add Post Button -->
-        <table>
-          <tbody>
-            <tr>
-              <td style="padding: 5px;"><a onclick="showAddDiv()" class="btn btn-primary">+ Add Post</a></td>
-              <td style="padding: 5px;"><a class="btn btn-secondary disabled">- Delete Post</a></td>
-            </tr>
-          </tbody>
-        </table><br>
+        <a onclick="showAddDiv()" style="margin-bottom: 8px;" class="btn btn-primary">+ Add Post</a>
 
         <!-- About Section -->
         <div class="p-4 mb-3 bg-light rounded">

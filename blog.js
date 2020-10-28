@@ -9,7 +9,7 @@ var dd = String(date.getDate()).padStart(2, '0');
 return month[date.getMonth()]+" "+dd+", "+date.getFullYear();
 }
 
-//Div functions
+//AddDiv functions
 function showAddDiv() {
     //Check if already up
     var addArticleDiv = document.getElementById("addArticleDiv");
@@ -95,6 +95,7 @@ function publishArticle(){
     //Create blog post
     var div=document.createElement("div");
     div.className="blog-post";
+    div.tagName="userPost";
 
     var h2=document.createElement("h2");
     h2.className="blog-post-title";
