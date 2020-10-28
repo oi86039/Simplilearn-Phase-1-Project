@@ -91,7 +91,7 @@
       <h1 class="display-4 font-italic">Featured: Live Long and Corporate</h1>
       <p class="lead my-3">Working for a corporation has its perks, especially financially. But the extra dough and
         security can come with a steep toll on our emotional well being.</p>
-      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+      <p class="lead mb-0"><a href="#jumpToFeatured" class="text-white font-weight-bold">Continue reading...</a></p>
     </div>
   </div>
 
@@ -141,19 +141,26 @@
               maxlength="50"></input>
             <input type="text" id="addAuthor" style="margin-bottom: 10px ;" class="blog-post-meta" placeholder="Author(s)/Contributor(s)"
              size="58" maxlength="100"></input>
-            <textarea id="addArticle" class="form-control" rows="8" maxLength="20,000" placeholder="Write your blog post here. (maximum 20,000 characters)"></textarea>
+            <textarea id="addArticle" class="form-control" rows="8" maxLength="20000" placeholder="Write your blog post here. (maximum 20,000 characters)"></textarea>
             <table>
               <tbody>
                 <tr>
-                  <td style="padding: 5px;"><a id="publish" class="btn btn-primary disabled">Publish</a></td>
-                  <td style="padding: 5px;"><a onclick="hideAddDiv()" class="btn btn-secondary">Discard</a></td>
+                  <td style="padding: 5px;"><a onclick="publishArticle()" id="publish" class="btn btn-primary disabled">Publish</a></td>
+                  <td style="padding: 5px;"><a onclick="hideAddDivConfirm()" class="btn btn-secondary">Discard</a></td>
                 </tr>
               </tbody>
             </table>
-        </form>
+          </form>
         <hr>
         </div>
-        <h3 class="pb-4 mb-4 font-italic border-bottom">
+
+        <h3 id="yourPosts" style="display: none" class="pb-4 mb-4 font-italic border-bottom">
+          Your Posts
+        </h3>
+
+        <div id="mainContent"></div>
+
+        <h3 id="jumpToFeatured" class="pb-4 mb-4 font-italic border-bottom">
           Featured
         </h3>
 

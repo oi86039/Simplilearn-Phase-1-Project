@@ -4,7 +4,7 @@ body {
 }
 
 .jumbotron{
-  background: url('https://www.desktopbackground.org/p/2011/01/31/150347_blue-abstract-wallpapers-full-hd-wallpapers-search_2560x1600_h.jpg') no-repeat center center fixed;
+  background: url('Simple-Clean-Clouds-Pattern-Seamless-Blue.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -24,11 +24,15 @@ body {
 }
 
 .btn{
-  background-color: #3252ba;
+  background-color: #1c89d3;
 }
 
 .btn-secondary{
   background-color: white;
   border-color: grey;
   color: grey;
+}
+
+.navbar{
+  background-color: #1c89d3;
 }
