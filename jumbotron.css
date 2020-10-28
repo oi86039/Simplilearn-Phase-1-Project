@@ -2,3 +2,19 @@
 body {
   padding-top: 3.5rem;
 }
+
+.jumbotron{
+  background: url('https://www.desktopbackground.org/p/2011/01/31/150347_blue-abstract-wallpapers-full-hd-wallpapers-search_2560x1600_h.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.display-3{
+  color: white;
+}
+
+.btn{
+  background-color: #3252ba;
+}
