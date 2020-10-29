@@ -108,7 +108,7 @@ function publishArticle(){
     var authorRef=document.createElement("a"); //Set author as link
     authorRef.href='#';
     authorRef.innerHTML=author.value;
-    p1.innerHTML+=authorRef.innerHTML;
+    p1.append(authorRef);
     div.appendChild(p1);
 
     var p2=document.createElement("p");
