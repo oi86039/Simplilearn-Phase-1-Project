@@ -93,7 +93,7 @@
         </div>
 
         <div class="container">
-            <form id="contact" action="confirmSubmit()">
+            <form id="contact" onsubmit="return submitForm();" action="./contact.html">
                 <div class="form-group" style="padding-top: 15px;">
                     <h2>Contact Form</h2>
                 </div>
@@ -119,16 +119,16 @@
                         <option value="concern">Problem</option>
                         <option value="question">question</option>
                         <option value="suggestion">Suggestion</option>
-                        </select>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="userText">Write your question/comment/concern/suggestion here: *</label>
                     <textarea id="userText" class="form-control" rows="8" maxLength="20000" required></textarea>
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="btn btn-primary" value="Send Message"></input>
+                    <input type="submit" class="btn btn-primary" value="Send Message"></a>
                 </div>
-            </form>
+        </form>
         </div>
 
         <div class="container" style="padding: 20px; text-align: center;
@@ -148,6 +148,7 @@
         crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src=contact.js></script>
 </body>
 
 </html>

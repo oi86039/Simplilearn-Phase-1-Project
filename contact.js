@@ -1,8 +1,4 @@
-function submitContactForm(){
-    alert("sup");
-    document.getElementById("contact").submit();
-}
-
-function confirmSubmit(){
-    alert("Message sent! (Note: not really, this is fake.");
+function submitForm(){
+    alert("Message Sent! (Note: not really, this is fake)");
+    return true;
 }
